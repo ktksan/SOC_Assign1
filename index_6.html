@@ -1,0 +1,37 @@
+
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<style>
+#resizable { width: 1000px; height: 600px; padding: 0.5em; }
+
+</style>
+<script>
+$(function() {
+$( "#resizable" ).resizable();
+});
+</script>
+
+<script> 
+        function go()
+          {
+            document.getElementById('iframe1').src=document.getElementById("url").value ;
+              
+          }
+      </script>
+</head>
+<body>
+<div id="resizable" class="ui-widget-content">
+        <iframe src="https://en.wikipedia.org/wiki/Main_Page" id="iframe1" name="iframe1" height="100%" width="100%"></iframe>
+
+</div>
+<p><a href="https://www.google.com/webhp?igu=1" target="iframe1">GOOGLE</a></p>
+            <p><a href="https://en.wikipedia.org/wiki/Main_Page" target="iframe1">wikipedia</a></p>
+            <p id="text1"> </p>
+            <input type="text" id="url" name="text1">
+            <input type="button" value="GO!" name="button1" onclick="go();">
+</body>
+</html>
