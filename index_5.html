@@ -1,0 +1,34 @@
+<html>
+    <head>
+    <title> </title>
+
+            <script> 
+              function go()
+                {
+                  document.getElementById('iframe1').src=document.getElementById("url").value ;
+                    
+                }
+              function change()
+                {
+                    document.getElementById('iframe1').width=document.getElementById("width").value;
+                    document.getElementById('iframe1').height=document.getElementById("height").value;
+               }
+            </script>
+
+
+    </head>
+    <body>
+            <h2>My First sub-window</h2>
+             <iframe src="https://en.wikipedia.org/wiki/Main_Page" id="iframe1" name="iframe1" height="60%" width="80%"></iframe>
+            <p><a href="https://www.google.com/webhp?igu=1" target="iframe1">GOOGLE</a></p>
+            <p><a href="https://en.wikipedia.org/wiki/Main_Page" target="iframe1">wikipedia</a></p>
+            <p id="text1"> </p>
+            <input type="text" id="url" name="text1">
+            <input type="button" value="GO!" name="button1" onclick="go();"><br>
+            width    <input type="text" id="width"><br>
+            height   <input type="text" id="height"><br>
+            <input type="button" value="change" name="button2" onclick="change();">
+            
+    </body>
+        
+</html>
